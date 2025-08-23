@@ -1,0 +1,21 @@
+.submitInput {
+    border: 1px solid transparent;
+    background-color: #7c2dbd;
+    border-radius: 15px;
+
+    padding: 10px;
+    width: 100%;
+
+    color: #ffffff;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 300ms ease;
+
+    &:hover {
+        border: 1px solid #7c2dbd;
+        background-color: #ffffff;
+
+        color: #7c2dbd;
+    }
+}

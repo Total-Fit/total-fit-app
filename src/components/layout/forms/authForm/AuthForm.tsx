@@ -1,0 +1,35 @@
+import Input from "@/components/ui/inputs/defaultsFields/Input";
+import style from "./AuthForm.module.scss";
+import SubmitInput from "@/components/ui/inputs/submitInput/SubmitInput";
+
+const AuthForm = () => {
+  return (
+    <div className={style.formContainer}>
+      <div className={style.formHeader}>
+        <h1>Área de Acesso</h1>
+        <h3>Dashboard administrativo Total Fit Academia</h3>
+      </div>
+      <form className={style.form}>
+        <Input
+          isAuthForm
+          label="Usuário"
+          type="text"
+          id="username"
+          placeholder="Usuário"
+          aria-label="Insira seu nome de usuário"
+        />
+        <Input
+          isAuthForm
+          label="Senha"
+          type="password"
+          id="password"
+          placeholder="Senha"
+          aria-label="Insira sua senha"
+        />
+        <SubmitInput value="Acessar" />
+      </form>
+    </div>
+  );
+};
+
+export default AuthForm;

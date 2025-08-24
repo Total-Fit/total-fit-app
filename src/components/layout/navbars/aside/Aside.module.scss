@@ -11,16 +11,15 @@
 
     color: #ffffff;
 
-    & > a {
-        h1 {
-            background-color: #7c2dbd;
-            border-radius: 15px;
+    h1 {
+        margin-bottom: 50px;
 
-            margin-bottom: 50px;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
 
-            font-size: 30px;
-            text-align: center;
-            text-transform: uppercase;
+        span {
+            color: #7c2dbd;
         }
     }
 

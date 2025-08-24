@@ -30,9 +30,9 @@ const Aside = () => {
 
   return (
     <aside className={style.aside}>
-      <Link href="/dashboard">
-        <h1>Total Fit</h1>
-      </Link>
+      <h1>
+        Total <span>Fit</span>
+      </h1>
       <nav>
         {links.map((link) => (
           <Link

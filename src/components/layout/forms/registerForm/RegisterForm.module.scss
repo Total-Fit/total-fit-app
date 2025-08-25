@@ -1,0 +1,111 @@
+.container {
+    background-color: #080808b6;
+    backdrop-filter: blur(10px);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 50px;
+    width: 100%;
+    height: 100vh;
+
+    .form {
+        background-color: #ffffff;
+        border: 3px solid #080808;
+        border-radius: 15px;
+        box-shadow: 0 0 35px 8px #080808;
+
+        position: relative;
+
+        padding: 50px;
+        width: 100%;
+        height: 646px;
+        max-width: 1150px;
+
+        overflow: hidden;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #7c2dbd;
+            border-radius: 30px;
+        }
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .closeButton {
+            background-color: #7c2dbd;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            padding: 10px;
+
+            cursor: pointer;
+
+            transition: all 300ms ease;
+
+            &:hover {
+                background-color: #080808;
+
+                img {
+                    filter: invert(24%) sepia(71%) saturate(4912%) hue-rotate(268deg) brightness(86%) contrast(101%);
+                }
+            }
+
+            img {
+                filter: invert(1);
+            }
+        }
+
+        h1 {
+            border-bottom: 4px solid #080808;
+
+            padding-bottom: 10px;
+
+            color: #7c2dbd;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        .fields {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+
+            padding-top: 50px;
+
+            div {
+                grid-column: span 2;
+            }
+
+            .submit {
+                grid-column: span 4;
+
+                margin: auto;
+                width: 100%;
+                max-width: 420px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        .form {
+            .fields {
+                div {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import AddContentButton from "@/components/ui/buttons/addContentButton/AddConten
 import style from "./Students.module.scss";
 import SearchInput from "@/components/ui/inputs/searchInput/SearchInput";
 import TableFilter from "@/components/ui/buttons/tableFilter/TableFilter";
+import UserTable from "@/components/layout/tables/userTable/UserTable";
 
 const StudentsPage = () => {
   return (
@@ -19,7 +20,9 @@ const StudentsPage = () => {
           <TableFilter />
         </section>
       </header>
-      <main className={style.main}></main>
+      <main className={style.main}>
+        <UserTable />
+      </main>
     </>
   );
 };

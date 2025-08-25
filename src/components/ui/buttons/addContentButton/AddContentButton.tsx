@@ -5,19 +5,14 @@ import style from "./AddContentButton.module.scss";
 
 type AddContentButtonProps = {
   label: string;
-  isTraining?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const AddContentButton = ({
-  label,
-  isTraining,
-  ...props
-}: AddContentButtonProps) => {
+const AddContentButton = ({ label, ...props }: AddContentButtonProps) => {
   return (
     <button className={style.button} {...props}>
       <span>{label}</span>
       <Image
-        src={isTraining ? "/add_training.svg" : "/add_icon.svg"}
+        src="/add_icon.svg"
         alt="Adicionar Conteúdo"
         width={16}
         height={16}

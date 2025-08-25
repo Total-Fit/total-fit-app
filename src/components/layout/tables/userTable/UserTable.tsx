@@ -2,6 +2,7 @@
 
 import { useState, Fragment } from "react";
 import style from "./UserTable.module.scss";
+import SelectedModal from "../../cards/selectedModal/SelectedModal";
 
 const UserTable = () => {
   const [selected, setSelected] = useState<Set<number>>(new Set());
@@ -77,27 +78,30 @@ const UserTable = () => {
   });
 
   return (
-    <div className={style.table}>
-      <p className={style.head}>
-        <label
-          htmlFor="all-checkbox"
-          className={allSelected ? style.checked : ""}
-          title={allSelected ? "Desmarcar todos" : "Selecionar todos"}
-        ></label>
-        <input
-          type="checkbox"
-          id="all-checkbox"
-          checked={allSelected}
-          onChange={(e) => toggleAll(e.target.checked)}
-        />
-      </p>
-      <p className={style.head}>Nome</p>
-      <p className={style.head}>CPF</p>
-      <p className={style.head}>Restrição</p>
-      <p className={style.head}>Pagamento</p>
-      <p className={style.head}>Inscrição</p>
-      {body}
-    </div>
+    <>
+      <div className={style.table}>
+        <p className={style.head}>
+          <label
+            htmlFor="all-checkbox"
+            className={allSelected ? style.checked : ""}
+            title={allSelected ? "Desmarcar todos" : "Selecionar todos"}
+          ></label>
+          <input
+            type="checkbox"
+            id="all-checkbox"
+            checked={allSelected}
+            onChange={(e) => toggleAll(e.target.checked)}
+          />
+        </p>
+        <p className={style.head}>Nome</p>
+        <p className={style.head}>CPF</p>
+        <p className={style.head}>Restrição</p>
+        <p className={style.head}>Pagamento</p>
+        <p className={style.head}>Inscrição</p>
+        {body}
+      </div>
+      {selected.size > 0 && <SelectedModal selectedCount={selected.size} />}
+    </>
   );
 };
 

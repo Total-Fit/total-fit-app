@@ -12,6 +12,15 @@
     overflow: hidden;
     overflow-y: auto;
 
+    &::-webkit-scrollbar-thumb {
+        background-color: #7c2dbd;
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
     .head {
         border-bottom: 1px solid #646464;
 

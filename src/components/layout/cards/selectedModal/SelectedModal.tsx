@@ -7,11 +7,7 @@ type SelectedModalProps = {
 
 const SelectedModal = ({ selectedCount }: SelectedModalProps) => {
   const handleDelete = () => {
-    const confirmed = confirm(
-      `Tem certeza que deseja deletar ${selectedCount} usuário(s)?`
-    );
-
-    console.log(confirmed);
+    confirm(`Tem certeza que deseja deletar ${selectedCount} usuário(s)?`);
   };
 
   return (

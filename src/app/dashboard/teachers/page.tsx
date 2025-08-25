@@ -10,6 +10,7 @@ const TeachersPage = () => {
         description="Gerenciar ou Adicionar Professores!"
         addButtonLabel="Adicionar Professor"
         searchInputLabel="Buscar Professores"
+        typeOfRegister="Professor"
       />
       <main className={style.main}>
         <UserTable />

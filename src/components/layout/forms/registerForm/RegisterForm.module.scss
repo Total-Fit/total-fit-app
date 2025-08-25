@@ -1,3 +1,13 @@
+@keyframes showForm {
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
 .container {
     background-color: #080808b6;
     backdrop-filter: blur(10px);
@@ -15,6 +25,8 @@
     width: 100%;
     height: 100vh;
 
+    z-index: 100000000;
+
     .form {
         background-color: #ffffff;
         border: 3px solid #080808;
@@ -28,8 +40,11 @@
         height: 646px;
         max-width: 1150px;
 
+        scale: 0;
         overflow: hidden;
         overflow-y: auto;
+
+        animation: showForm 500ms 200ms ease forwards;
 
         &::-webkit-scrollbar-thumb {
             background-color: #7c2dbd;

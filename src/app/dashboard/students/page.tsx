@@ -1,7 +1,6 @@
 import UserTable from "@/components/layout/tables/userTable/UserTable";
 import DashboardUserHeader from "@/components/layout/dashboardUserHeader/DashboardUserHeader";
 import style from "./Students.module.scss";
-
 const StudentsPage = () => {
   return (
     <>
@@ -10,6 +9,7 @@ const StudentsPage = () => {
         description="Gerenciar ou Adicionar Alunos!"
         addButtonLabel="Adicionar Aluno"
         searchInputLabel="Buscar Alunos"
+        typeOfRegister="Aluno"
       />
       <main className={style.main}>
         <UserTable />

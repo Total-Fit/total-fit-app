@@ -1,25 +1,16 @@
-import AddContentButton from "@/components/ui/buttons/addContentButton/AddContentButton";
-import style from "./Students.module.scss";
-import SearchInput from "@/components/ui/inputs/searchInput/SearchInput";
-import TableFilter from "@/components/ui/buttons/tableFilter/TableFilter";
 import UserTable from "@/components/layout/tables/userTable/UserTable";
+import DashboardUserHeader from "@/components/layout/dashboardUserHeader/DashboardUserHeader";
+import style from "./Students.module.scss";
 
 const StudentsPage = () => {
   return (
     <>
-      <header className={style.header}>
-        <section className={style.headerTitle}>
-          <div>
-            <h1>Painel de Alunos</h1>
-            <p>Gerenciar ou Adicionar Alunos!</p>
-          </div>
-          <AddContentButton label="Adicionar Aluno" />
-        </section>
-        <section className={style.headerFilters}>
-          <SearchInput placeholder="Buscar Alunos" />
-          <TableFilter />
-        </section>
-      </header>
+      <DashboardUserHeader
+        title="Painel de Alunos"
+        description="Gerenciar ou Adicionar Alunos!"
+        addButtonLabel="Adicionar Aluno"
+        searchInputLabel="Buscar Alunos"
+      />
       <main className={style.main}>
         <UserTable />
       </main>

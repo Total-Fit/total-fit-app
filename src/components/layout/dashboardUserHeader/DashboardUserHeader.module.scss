@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    padding: 20px 50px;
+
+    color: #646464;
+
+    .headerTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: lighter;
+        }
+    }
+
+    .headerFilters {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 5%;
+    }
+}

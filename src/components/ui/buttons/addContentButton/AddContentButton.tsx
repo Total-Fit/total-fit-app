@@ -12,7 +12,7 @@ const AddContentButton = ({ label, ...props }: AddContentButtonProps) => {
     <button className={style.button} {...props}>
       <span>{label}</span>
       <Image
-        src="/add_icon.svg"
+        src="/icons/add_icon.svg"
         alt="Adicionar Conteúdo"
         width={16}
         height={16}

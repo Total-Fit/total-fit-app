@@ -15,7 +15,7 @@ const SelectedModal = ({ selectedCount }: SelectedModalProps) => {
       <p>{selectedCount} selecionado(s)</p>
       <button type="submit" onClick={handleDelete}>
         <span>Deletar</span>
-        <Image src="/close_icon.svg" alt="Deletar" width={16} height={16} />
+        <Image src="/icons/close_icon.svg" alt="Deletar" width={16} height={16} />
       </button>
     </div>
   );

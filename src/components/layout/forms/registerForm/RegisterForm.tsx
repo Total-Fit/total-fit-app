@@ -30,7 +30,7 @@ const RegisterForm = ({ formTitle, onClose }: RegisterFormProps) => {
       <form className={style.form}>
         <button type="button" className={style.closeButton} onClick={onClose}>
           <Image
-            src="/close_icon.svg"
+            src="/icons/close_icon.svg"
             alt="Image description"
             width={38}
             height={38}

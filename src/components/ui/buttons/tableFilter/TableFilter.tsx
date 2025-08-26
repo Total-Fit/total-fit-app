@@ -28,7 +28,7 @@ const TableFilter = () => {
       {filters.map((filter) => (
         <button key={filter.id} className={filter.id === 3 ? style.active : ""}>
           <span>{filter.label}</span>
-          <Image src="/top_arrow_icon.svg" alt="Icon" width={24} height={24} />
+          <Image src="/icons/top_arrow_icon.svg" alt="Icon" width={24} height={24} />
         </button>
       ))}
     </div>

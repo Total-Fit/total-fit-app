@@ -12,7 +12,11 @@ class ApiIntegrate {
       throw new Error("Erro na requisição");
     }
 
-    return response.json() as Promise<{ message: string; status: number }>;
+    return response.json() as Promise<{
+      status: number;
+      message: string;
+      token: string;
+    }>;
   }
 
   static async logout() {

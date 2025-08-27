@@ -40,10 +40,10 @@ const Aside = () => {
   ];
 
   const handleLogout = async () => {
-    const response = await ApiIntegrate.logout();
-
     try {
-      if (response.status === 200) route.push("/");
+      await ApiIntegrate.logout();
+      
+      route.push("/");
     } catch (error) {
       console.error("Erro ao fazer logout:", error);
     }

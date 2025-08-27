@@ -19,8 +19,8 @@ export async function POST(req: NextRequest) {
   });
 
   return NextResponse.json({
+    status: 200,
     message: "Login bem-sucedido",
     token,
-    status: 200,
   });
 }

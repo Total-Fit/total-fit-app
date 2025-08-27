@@ -16,9 +16,9 @@ const AuthForm = () => {
     e.preventDefault();
 
     try {
-      const data = await ApiIntegrate.login({ username, password });
+      await ApiIntegrate.login({ username, password });
 
-      if (data.status === 200) route.push("/dashboard");
+      route.push("/dashboard");
     } catch (error) {
       console.error(error);
     }

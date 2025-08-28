@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack -p 3001",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "jest"
   },
   "dependencies": {
     "next": "15.5.0",
@@ -17,14 +18,17 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
-    "json-server": "^1.0.0-beta.3",
+    "jest": "^30.1.1",
+    "jest-environment-jsdom": "^30.1.1",
     "sass": "^1.90.0",
     "tailwindcss": "^4",
+    "ts-jest": "^29.4.1",
     "typescript": "^5"
   }
 }

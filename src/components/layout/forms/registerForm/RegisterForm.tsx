@@ -38,9 +38,9 @@ const RegisterForm = ({ formTitle, onClose }: RegisterFormProps) => {
         </button>
         <h1>{formTitle}</h1>
         <div className={style.fields}>
-          {fields.map((field) => (
-            <div key={field}>
-              <Input isAuthForm label={field} id={field} />
+          {fields.map((field, i) => (
+            <div key={i}>
+              <Input isAuthForm label={field} id={field} autoFocus={i === 0} />
             </div>
           ))}
           <div className={style.submit}>

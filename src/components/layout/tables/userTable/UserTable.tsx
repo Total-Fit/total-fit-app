@@ -21,6 +21,7 @@ const UserTable = () => {
   const toggleRow = (index: number) => {
     setSelected((prev) => {
       const next = new Set(prev);
+
       if (next.has(index)) next.delete(index);
       else next.add(index);
 

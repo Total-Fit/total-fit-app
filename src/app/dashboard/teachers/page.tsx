@@ -1,6 +1,7 @@
 import UserTable from "@/components/layout/tables/userTable/UserTable";
 import DashboardUserHeader from "@/components/layout/dashboardUserHeader/DashboardUserHeader";
 import style from "./Teachers.module.scss";
+import Pagination from "@/components/layout/cards/pagination/Pagination";
 
 const TeachersPage = () => {
   return (
@@ -14,6 +15,7 @@ const TeachersPage = () => {
       />
       <main className={style.main}>
         <UserTable />
+        <Pagination />
       </main>
     </>
   );

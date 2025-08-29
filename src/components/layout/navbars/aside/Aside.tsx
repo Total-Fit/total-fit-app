@@ -1,15 +1,13 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import style from "./Aside.module.scss";
 import LogoutButton from "@/components/ui/buttons/logoutButton/LogoutButtton";
-import ApiIntegrate from "@/lib/services/apiIntegrate";
 
 const Aside = () => {
   const pathname = usePathname();
-  const route = useRouter();
 
   const links = [
     {
@@ -39,16 +37,6 @@ const Aside = () => {
     },
   ];
 
-  const handleLogout = async () => {
-    try {
-      await ApiIntegrate.logout();
-      
-      route.push("/");
-    } catch (error) {
-      console.error("Erro ao fazer logout:", error);
-    }
-  };
-
   return (
     <aside className={style.aside}>
       <h1>
@@ -59,7 +47,7 @@ const Aside = () => {
           <Link
             key={link.href}
             href={link.href}
-            className={`${pathname === link.href ? style.active : ""} `}
+            className={`${pathname === link.href ? style.active : ""}`}
           >
             <Image
               src={link.icon}
@@ -71,7 +59,7 @@ const Aside = () => {
           </Link>
         ))}
       </nav>
-      <LogoutButton onClick={handleLogout} />
+      <LogoutButton />
     </aside>
   );
 };

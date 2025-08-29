@@ -1,0 +1,61 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    margin: 20px 0;
+
+    button {
+        background-color: darken(#7c2dbd, 12%);
+        border-radius: 5px;
+
+        color: #080808;
+
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+            background-color: #7c2dbd;
+
+            color: #ffffff;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    .prevButton,
+    .nextButton {
+        padding: 16px 24px;
+
+        img {
+            transition: all 300ms ease;
+        }
+    }
+
+    .prevButton {
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+
+    .nextButton {
+        img {
+            transform: rotate(90deg);
+        }
+    }
+
+    .pageNumber {
+        padding: 11px 22px;
+
+        font-size: 18px;
+
+        &.active {
+            background-color: #7c2dbd;
+
+            color: #ffffff;
+        }
+    }
+}

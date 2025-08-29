@@ -26,11 +26,6 @@ const Aside = () => {
       icon: "/icons/teacher_icon.svg",
     },
     {
-      href: "/dashboard/my-training",
-      label: "Meu Treino",
-      icon: "/icons/training_icon.svg",
-    },
-    {
       href: "/dashboard/training",
       label: "Treinamentos",
       icon: "/icons/training_icon.svg",

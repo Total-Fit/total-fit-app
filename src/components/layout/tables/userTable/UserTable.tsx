@@ -3,9 +3,11 @@
 import { useState, Fragment } from "react";
 import style from "./UserTable.module.scss";
 import SelectedModal from "../../cards/selectedModal/SelectedModal";
+import RegisterForm from "../../forms/registerForm/RegisterForm";
 
 const UserTable = () => {
   const [selected, setSelected] = useState<Set<number>>(new Set());
+  const [openEdit, setOpenEdit] = useState<boolean>(false);
 
   const data = {
     name: "Gabriel Silva Lima",
@@ -59,6 +61,7 @@ const UserTable = () => {
           className={`${style.body} ${style.name} ${
             isRowSelected ? style.checked : ""
           }`}
+          onClick={() => setOpenEdit(true)}
         >
           {data.name}
         </p>
@@ -102,6 +105,12 @@ const UserTable = () => {
         {body}
       </div>
       {selected.size > 0 && <SelectedModal selectedCount={selected.size} />}
+      {openEdit && (
+        <RegisterForm
+          formTitle="Editar Usuário"
+          onClose={() => setOpenEdit(false)}
+        />
+      )}
     </>
   );
 };

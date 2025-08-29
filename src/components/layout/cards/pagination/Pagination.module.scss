@@ -7,10 +7,10 @@
     margin: 20px 0;
 
     button {
-        background-color: darken(#7c2dbd, 12%);
+        background-color: #646464;
         border-radius: 5px;
 
-        color: #080808;
+        color: rgba(#ffffff, 0.5);
 
         cursor: pointer;
         transition: all 300ms ease;
@@ -21,7 +21,7 @@
             color: #ffffff;
 
             img {
-                filter: brightness(0) invert(1);
+                filter: opacity(1) invert(1);
             }
         }
     }
@@ -31,6 +31,8 @@
         padding: 16px 24px;
 
         img {
+            filter: opacity(0.5) invert(1);
+
             transition: all 300ms ease;
         }
     }

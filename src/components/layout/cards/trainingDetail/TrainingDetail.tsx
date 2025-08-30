@@ -2,7 +2,7 @@ import style from "./TrainingDetail.module.scss";
 
 const TrainingDetail = () => {
   return (
-    <div className={style.trainingDetail}>
+    <section className={style.trainingDetail}>
       <div className={style.trainingItem}>
         <h2>Treino A</h2>
         <div>
@@ -30,7 +30,7 @@ const TrainingDetail = () => {
           <p>Remada unilateral 3x10</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

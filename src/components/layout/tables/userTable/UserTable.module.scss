@@ -1,5 +1,5 @@
 .table {
-    background-color: #080808;
+    background-color: #9b9b9b;
     border-radius: 30px;
 
     display: grid;
@@ -13,7 +13,7 @@
     overflow-y: auto;
 
     &::-webkit-scrollbar-thumb {
-        background-color: #7c2dbd;
+        background-color: #646464;
         border-radius: 20px;
     }
 
@@ -22,7 +22,8 @@
     }
 
     .head {
-        border-bottom: 1px solid #646464;
+        background-color: #646464;
+        border-bottom: 1px solid #080808;
 
         padding: 25px 0;
 
@@ -32,6 +33,11 @@
 
         label {
             border: 2px solid #ffffff;
+
+            &.checked {
+                background-color: #ffffff;
+                border: 2px solid #646464;
+            }
         }
     }
 
@@ -40,7 +46,7 @@
 
         padding: 25px 0;
 
-        color: #a7a3a3;
+        color: #080808;
         font-size: 14px;
         font-weight: normal;
 
@@ -50,20 +56,17 @@
             cursor: pointer;
 
             &:hover {
-                color: #7c2dbd;
+                color: #ffffff;
             }
         }
 
         &.checked {
-            color: #7c2dbd;
-        }
-
-        label {
-            border: 2px solid #646464;
+            color: #ffffff;
         }
     }
 
     label {
+        border: 2px solid #080808;
         border-radius: 5px;
 
         position: relative;
@@ -80,8 +83,8 @@
         transition: all 300ms ease;
 
         &.checked {
-            background-color: #7c2dbd;
-            border: 2px solid #7c2dbd;
+            background-color: #ffffff;
+            border: 2px solid #9b9b9b;
         }
     }
 

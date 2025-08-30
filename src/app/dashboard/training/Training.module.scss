@@ -1,0 +1,28 @@
+.header {
+    border-bottom: 2px dotted #646464;
+
+    padding: 20px 0;
+
+    color: #646464;
+    text-align: center;
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 50px;
+
+    .studentList {
+    }
+}

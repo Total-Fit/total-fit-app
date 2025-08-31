@@ -1,4 +1,4 @@
-import style from "./Training.module.scss";
+import style from "./TrainingTable.module.scss";
 
 const TrainingTable = () => {
   return (

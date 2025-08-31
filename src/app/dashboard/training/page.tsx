@@ -1,5 +1,5 @@
-import TrainingDetail from "@/components/layout/cards/trainingDetail/TrainingDetail";
 import style from "./Training.module.scss";
+import TrainingDetail from "@/components/layout/cards/trainingDetail/TrainingDetail";
 import TrainingTable from "@/components/layout/tables/trainingTable/TrainingTable";
 
 const TrainingPage = () => {

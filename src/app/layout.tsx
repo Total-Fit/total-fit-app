@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const quicksand = localFont({
+  src: "./quicksand.woff2",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Total Fit Academia",
@@ -13,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body className={quicksand.className}>{children}</body>
     </html>
   );
 }

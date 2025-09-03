@@ -1,0 +1,119 @@
+.formTraining {
+    background-color: #646464;
+    border-radius: 24px;
+
+    grid-column: span 2;
+
+    padding: 20px;
+
+    h2 {
+        border-bottom: 1px solid #ffffff;
+
+        padding-bottom: 15px;
+
+        color: #dbdbdb;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .formContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        padding: 20px;
+
+        form {
+            background-color: #9b9b9b;
+            border-radius: 10px;
+
+            width: 100%;
+            padding: 10px;
+
+            text-align: center;
+
+            h3 {
+                border-bottom: 2px solid #050505;
+
+                padding-bottom: 10px;
+
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .formGroup {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                padding: 20px 10px;
+
+                textarea {
+                    background-color: #646464;
+                    border: 1px solid transparent;
+                    border-radius: 8px;
+                    outline: none;
+
+                    padding: 10px;
+                    height: 80px;
+                    resize: none;
+
+                    color: #ffffff;
+                    font-size: 14px;
+
+                    transition: all 300ms ease;
+
+                    &::placeholder {
+                        color: #dbdbdb;
+                    }
+
+                    &:focus {
+                        border: 1px solid #ffffff;
+                    }
+                }
+
+                input {
+                    background-color: #646464;
+                    border: 1px solid transparent;
+                    border-radius: 8px;
+                    outline: none;
+
+                    padding: 10px;
+
+                    color: #ffffff;
+
+                    transition: all 300ms ease;
+
+                    &::-webkit-inner-spin-button {
+                        display: none;
+                    }
+
+                    &::placeholder {
+                        color: #dbdbdb;
+                    }
+
+                    &:focus {
+                        border: 1px solid #ffffff;
+                    }
+                }
+
+                button {
+                    background-color: #ffffff;
+                    border-radius: 8px;
+
+                    padding: 10px;
+
+                    cursor: pointer;
+
+                    transition: all 300ms ease;
+
+                    &:hover {
+                        background-color: #050505;
+
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

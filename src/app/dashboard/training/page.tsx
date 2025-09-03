@@ -1,5 +1,6 @@
 import style from "./Training.module.scss";
 import TrainingDetail from "@/components/layout/cards/trainingDetail/TrainingDetail";
+import TrainingForm from "@/components/layout/forms/trainingForrm/TrainingForm";
 import TrainingTable from "@/components/layout/tables/trainingTable/TrainingTable";
 
 const TrainingPage = () => {
@@ -12,7 +13,7 @@ const TrainingPage = () => {
       <main className={style.main}>
         <TrainingTable />
         <TrainingDetail />
-        <section className={style.section}></section>
+        <TrainingForm />
       </main>
     </>
   );
